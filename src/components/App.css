@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: royalblue;
+  border: 1px solid black;
+  width: 90%;
+  min-height: 50vh;
+  min-width: 350px;
+  max-width: 700px;
+}
+
+input,
+button {
+  display: block;
+  margin: 10px auto;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+button {
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.result {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 160%;
+}
