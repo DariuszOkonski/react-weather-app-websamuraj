@@ -75,26 +75,16 @@ class App extends React.Component {
   }
 
   render() {
-    return ( <
-      div className = "App" >
-      <
-      Form value = {
-        this.state.value
-      }
-      change = {
-        this.handleInputChange
-      }
-      submit = {
-        this.handleCitySubmit
-      }
-      />
+    return (
+      <div className="App">
+        <Form
+          value={this.state.value}
+          change={this.handleInputChange}
+          submit={this.handleCitySubmit}
+        />
 
-      <
-      Result weather = {
-        this.state
-      }
-      /> <
-      /div>
+        <Result weather={this.state} />
+      </div>
     );
   }
 }
