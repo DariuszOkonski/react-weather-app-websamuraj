@@ -37,7 +37,7 @@ class App extends React.Component {
     }
 
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&${APIkey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&${APIkey}&units=metric`)
       .then(response => {
         if (response.ok) {
           return response.json();
@@ -75,16 +75,26 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="App">
-        <Form
-          value={this.state.value}
-          change={this.handleInputChange}
-          submit={this.handleCitySubmit}
-        />
+    return ( <
+      div className = "App" >
+      <
+      Form value = {
+        this.state.value
+      }
+      change = {
+        this.handleInputChange
+      }
+      submit = {
+        this.handleCitySubmit
+      }
+      />
 
-        <Result weather={this.state} />
-      </div>
+      <
+      Result weather = {
+        this.state
+      }
+      /> <
+      /div>
     );
   }
 }
